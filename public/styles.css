@@ -1,0 +1,239 @@
+/* ---------------------- */
+/* === GENERAL STYLES === */
+/* ---------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4CAF50;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #408843;
+  margin: 20px 0;
+}
+
+a {
+  color: #FFDD44;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ----------------------- */
+/* === HEADER AND MENU === */
+/* ----------------------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px;
+  position: relative;
+  background-color: #1d4b21;
+}
+
+.header a {
+  text-transform: lowercase;
+}
+
+/* Desktop Menu - Always visible */
+@media (min-width: 769px) {
+  .menu-container {
+      display: flex; /* Menu is a horizontal row on desktop */
+      gap: 20px;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .menu-toggle {
+      display: none; /* Hide the burger icon on desktop */
+  }
+}
+
+/* Mobile Menu - Hidden by default */
+@media (max-width: 768px) {
+  /* Menu container hidden by default on mobile */
+  .menu-container {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      padding: 13px 20px;      
+  }
+
+  /* Show the menu when the burger icon is clicked */
+  .menu-container.open {
+      display: flex;
+  }
+
+  /* Burger Button Styles */
+  .menu-toggle {
+      color: #FFDD44;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+  }
+
+  /* Menu positioned directly below burger icon */
+  .menu-container.open {
+      position: relative;
+      top: 0;
+      z-index: 1000;
+  }
+
+  /* When the menu expands, it pushes down the content */
+  body.menu-open .container {
+      margin-top: 200px; /* Adjust this value based on your menu height */
+  }
+}
+
+/* -------------- */
+/* === BANNER === */
+/* -------------- */
+
+#banner {
+  background-image: url('images/banner.png');
+  background-size:cover;  /* Ensures the image covers the banner */
+  background-position: center center;  /* Keeps the image centered */
+  height: 70vh;  /* Full height of the viewport */
+  width: 100%;  /* Full width of the viewport */
+  overflow-x: hidden;  /* Prevents horizontal scrolling */
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;  /* Adjust font size as needed */
+  font-weight: bold;
+}
+
+/* Adjustments on mobile for better scaling */
+@media (max-width: 768px) {
+  #banner {
+    background-position: center center; /* Focus on the middle of the image */
+    height: 50vh;  /* Keep the height to 100% of the viewport height */
+    width: auto;
+    overflow-x: hidden;  /* Prevent horizontal scrolling on mobile */
+  }
+}
+
+/* Hide this but keep it for SEO */
+#header-text {
+  position: absolute;
+  width: 1px; 
+  height: 1px;
+  margin: -1px;
+  padding: 0; 
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* -------------------- */
+/* === MAIN CONTENT === */
+/* -------------------- */
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+section {
+  padding: 20px;
+}
+
+/* desktop */
+@media (min-width: 769px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .section-content {
+    width: 60%;
+    align-items: center;
+  }
+}
+
+section h1 {
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  margin: 1rem;
+}
+
+.section-alternate {
+  background-color: #36a23b;
+}
+
+section .top-link {
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.day-section {
+  margin-bottom: 50px;
+}
+
+.day-section h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #ffdd44;
+  text-align: center;
+}
+
+#intro {
+  background-color: #6eb169;
+  color: #1c4b21;
+}
+
+
+/* ------------------- */
+/* === EVENTS LIST === */
+/* ------------------- */
+
+#events {
+  padding-bottom: 20px;
+}
+
+.event {
+  padding: 10px 10px 16px 10px;
+  background-color: #FFDD44;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+.event a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: lowercase;
+}
+
+.event a:hover, .event a:active {
+  text-decoration: underline;
+}

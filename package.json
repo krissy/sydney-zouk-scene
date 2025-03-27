@@ -1,0 +1,9 @@
+{
+  "name": "sydney-zouk-scene",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "vercel": "^41.4.1"
+  }
+}
