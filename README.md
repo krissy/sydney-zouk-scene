@@ -143,10 +143,10 @@ To **embed a YouTube or Instagram video**:
 
 This site was made very quickly in my spare time and very much prioritised **getting it out there over perfection**! Any contributions you make to this project to clean it up or make it better are **greatly appreciated**. ☺️
 
-1. Clone this repository and create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+1. Fork this repository and create a Feature Branch inf your project (`git checkout -b feature/AmazingFeature`)
 2. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 3. Push to the Branch (`git push origin feature/AmazingFeature`)
-4. Open a Pull Request
+4. Open a Pull Request in this repository based off your repo's feature branch
 5. Let me know and I'll review and merge it which will deploy it to production
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
