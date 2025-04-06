@@ -110,9 +110,9 @@ Find more details in the How To Use section below.
 ### 📁 Main Files
 
 * **index.html** — The homepage for all main content, SEO keywords and metadata
-* **style.css** — All your custom styles
+* **styles.css** — All your custom styles
 * **/images folder** - please replace the main banner `images/banner.png` with your own (we used [Canva](https://canva.com) to create ours)
-* **favicon.io** - please replace the `favicon.ico` with your own (you can use sites like [favicon.io](https://favicon.io) to create one)
+* **favicon.ico** - please replace the `favicon.ico` with your own (you can use sites like [favicon.io](https://favicon.io) to create one)
 * **.env** - copy of your environment variables including your JSON-formatted spreadsheet URL (see `.env.example`). NB: You will need to add these environment variables in Vercel once hosted.
 * **fetchData.js** - this makes the server call to your Google spreadsheet. You shouldn't have to make edits to this.
 
